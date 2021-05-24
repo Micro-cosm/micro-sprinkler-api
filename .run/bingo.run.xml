@@ -1,0 +1,17 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="dev" type="GoApplicationRunConfiguration" factoryName="Go Application" singleton="false">
+    <module name="micro-sprinkler-api" />
+    <working_directory value="$PROJECT_DIR$" />
+    <go_parameters value="-race" />
+    <envs>
+      <env name="REMOTE_PORT" value="8080" />
+      <env name="GOOGLE_APPLICATION_CREDENTIALS" value=".secrets/credentials.json" />
+    </envs>
+    <kind value="PACKAGE" />
+    <package value="weja.us/micro/sprinkler-api" />
+    <directory value="$PROJECT_DIR$" />
+    <filePath value="main.go" />
+    <output_directory value="$PROJECT_DIR$/dist" />
+    <method v="2" />
+  </configuration>
+</component>

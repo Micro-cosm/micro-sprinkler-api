@@ -1,0 +1,17 @@
+{
+    "FdTest":               false,
+    "FdVerbose":            false,
+    "FdBuildContext":       "go",
+    "FdRepo":               "micro-sprinkler-api",
+    "FdService":            "sprinkler-api",
+    "FdRouteBase":          "sapi",
+    "FdTitle":              "Sprinkler API",
+    "FdTargetAlias":        "local",
+    "FdTargetDomain":       "weja.us",
+    "FdTargetImageTag":     "latest",
+    "FdTargetLocalPort":    "5423",
+    "FdTargetLogLevel":     "info",
+    "FdTargetProjectId":    "weja-us",
+    "FdTargetRealm":        "too.fb.",
+    "FdTargetRemotePort":   "8080"
+}
