@@ -2,6 +2,7 @@
 # Go specific
 pkg
 vendor
+dist
 
 .ARCHIVE
 *.NEW
