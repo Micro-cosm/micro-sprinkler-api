@@ -7,6 +7,15 @@ services:
     image: ${IMAGE_URL}
     build:
       context: .
+      args:
+        - GOOGLE_APPLICATION_CREDENTIALS
+        - DEBUG
+        - LOGS
+        - LOCAL_PORT
+        - ROUTE_BASE
+        - SERVICE
+        - EXECUTABLE
+        - TZ
     container_name: ${CONTAINER}
     restart: unless-stopped
     env_file:

@@ -166,10 +166,12 @@ func commonMiddleware(next http.Handler) http.Handler {
 func main() {
 	isDebug, _ = strconv.ParseBool(os.Getenv("DEBUG"))
 	routeBase := os.Getenv("ROUTE_BASE")
+
 	if isDebug {
 		log.Println("Sparking up server on port: 8080(possibly mapped)", routeBase)
 	}
 	var router = mux.NewRouter()
+
 	router.Use(commonMiddleware)
 	router.HandleFunc(routeBase+"1", pod1).Methods("GET")
 	router.HandleFunc(routeBase+"2", pod2).Methods("GET")

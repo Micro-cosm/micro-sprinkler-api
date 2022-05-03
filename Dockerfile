@@ -1,9 +1,12 @@
 
+ARG		EXECUTABLE
+
 
 FROM	golang:1.16-buster as builder
-
 ARG		EXECUTABLE
 ENV		EXECUTABLE=${EXECUTABLE}
+
+RUN		echo "!!!!!!!!!!!!!!!! executable: ${EXECUTABLE}"
 
 WORKDIR	/app
 
@@ -11,12 +14,11 @@ COPY	go.* ./
 RUN		go mod download
 COPY	./main.go ./main.go
 
+RUN     ls -al
 RUN		go build -v -o ${EXECUTABLE}
 
 
-
 FROM	debian:buster-slim
-
 ARG		EXECUTABLE
 ENV		EXECUTABLE=${EXECUTABLE}
 

@@ -1,12 +1,11 @@
-
-
 # MicroSprinklerApi
 
-A Go quickstart project that proxies pubsub subscriptions of scheduler instructions destined to fire sprinkler 
+A Go quickstart project that acts as a pubsub subscription proxy of scheduler instructions destined to fire sprinkler 
 relays which in-turn fire sprinkler solenoids.
 
 **NOTE:**  Built to work seamlessly with [BinGo](https://github.com/wejafoo/bin-go) mife build/deploy utility
 
+![sprinkler scheduling API](internal/doc/scheduler.png)
 ----
 
 ## Developer Install
