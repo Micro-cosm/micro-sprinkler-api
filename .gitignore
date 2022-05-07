@@ -3,7 +3,12 @@
 pkg
 vendor
 dist
+.dist
 
+.secrets
+**/secrets/*
+**/.secrets/*
+**/.DS_Store
 .ARCHIVE
 *.NEW
 *.SAVE
@@ -11,9 +16,6 @@ dist
 .idea
 
 env
-**/secrets/*
-**/.secrets/*
-**/.DS_Store
 
 .DS_Store
 *.[56789ao]

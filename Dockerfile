@@ -1,7 +1,6 @@
 
 ARG		EXECUTABLE
 
-
 FROM	golang:1.16-buster as builder
 ARG		EXECUTABLE
 ENV		EXECUTABLE=${EXECUTABLE}
